@@ -20,13 +20,29 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: var(--bg-cream);
+   font-family: 'Lato', sans-serif;
     color: var(--text-dark);
     overflow-x: hidden;
     line-height: 1.6;
+    background-color: var(--bg-cream); 
+    background-image: url('images/wedding\ invite\ logo.png'); 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%; 
+    position: relative;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 248, 240, 0.85); /* Matches --bg-cream with transparency */
+    z-index: -1;
+}
 /* --- TYPOGRAPHY --- */
 h1, h2, h3 {
     color: var(--wine);
@@ -130,6 +146,7 @@ nav {
 section {
     padding: 4rem 10%;
     text-align: center;
+    background: transparent;
 }
 
 .section-title {
@@ -153,6 +170,11 @@ section {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.timeline-item, .bank-card {
+    backdrop-filter: blur(5px); /* Blurs the logo slightly behind cards for focus */
+    border: 1px solid var(--gold);
 }
 
 .timeline-item {
@@ -393,10 +415,6 @@ footer p {
 /* --- FLORAL ENHANCEMENTS --- */
 
 
-body {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0 2c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm15 15c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0 2c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zM15 22c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0 2c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z' fill='%23d4af37' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
 /* 2. Section Dividers (Floral Line) */
 .section-title::before {
     content: '✿';
@@ -443,8 +461,6 @@ body {
 
 /* 5. Gold Frame for the Slider */
 .slider-container {
-    outline: 15px solid var(--white);
-    outline-offset: -20px;
     border: 2px solid var(--gold);
 }
 
@@ -455,3 +471,4 @@ body {
         height: 80px;
     }
 }
+
