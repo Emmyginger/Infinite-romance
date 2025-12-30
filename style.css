@@ -290,6 +290,10 @@ section {
     margin-bottom: 10px;
 }
 
+.bank-card h3 {
+    color: var(--gold);
+}
+
 .bank-details {
     font-size: 1.2rem;
     margin: 10px 0;
