@@ -88,7 +88,7 @@ nav {
 .hero {
     height: 100vh;
     /* Parallax effect background */
-    background: linear-gradient(rgba(114, 47, 55, 0.7), rgba(114, 47, 55, 0.4)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background: linear-gradient(rgba(114, 47, 55, 0.7), rgba(114, 47, 55, 0.4)), url('images/WhatsApp\ Image\ 2025-12-27\ at\ 12.50.48\ PM.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -330,4 +330,55 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--white);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero h1 span {
+        font-size: 1.5rem;
+    }
+
+    .slogan {
+        font-size: 2.5rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .slides img {
+        height: 300px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
