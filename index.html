@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israel & Rebecca | Infinite Romance '26</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <img src="images/wedding invite logo.png" alt="Israel & Rebecca Logo" class="logo">
+
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#reception" class="nav-item">Reception</a>
+            <a href="#gallery" class="nav-item">Moments</a>
+            <a href="#gifts" class="nav-item">Gift Us</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1 class="stylish-font">Israel & Rebecca <span>are getting married</span></h1>
+        <div class="slogan stylish-font">Infinite Romance '26</div>
+    </header>
+
+    <section id="reception">
+        <h2 class="section-title stylish-font">Order of Reception</h2>
+        <div class="timeline">
+            <div class="timeline-item scroll-anim">
+                <div class="time">12:00 PM</div>
+                <div class="event-details">
+                    <h3>Arrival of Guests</h3>
+                    <p>Red Carpet photography and seating.</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-anim">
+                <div class="time">01:00 PM</div>
+                <div class="event-details">
+                    <h3>Grand Entrance</h3>
+                    <p>The couple makes their entrance.</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-anim">
+                <div class="time">01:30 PM</div>
+                <div class="event-details">
+                    <h3>Opening Prayer & Toast</h3>
+                    <p>Blessings and toasting to the couple.</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-anim">
+                <div class="time">02:30 PM</div>
+                <div class="event-details">
+                    <h3>Menu Menu & Dance</h3>
+                    <p>Food is served while the dance floor opens.</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-anim">
+                <div class="time">04:30 PM</div>
+                <div class="event-details">
+                    <h3>Vote of Thanks</h3>
+                    <p>Closing remarks by the couple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title stylish-font">Our Moments</h2>
+        
+        <div class="slider-container">
+            <div class="slides fade">
+                <img src="images/_DSC0086.JPG" alt="Couple Photo 1">
+            </div>
+            <div class="slides fade">
+                <img src="images/_DSC0091.JPG" alt="Couple Photo 2">
+            </div>
+            <div class="slides fade">
+                <img src="images/IMG_5442.JPG" alt="Couple Photo 3">
+            </div>
+            <div class="slides fade">
+                <img src="images/IMG_5447.JPG" alt="Couple Photo 4">
+            </div>
+            <div class="slides fade">
+                <img src="images/israelight wedding 3.jpg" alt="Couple Photo 5">
+            </div>
+            <div class="slides fade">
+                <img src="images/israelight wedding 4.jpg" alt="Couple Photo 6">
+            </div>
+            <div class="slides fade">
+                <img src="images/israelight wedding 5.jpg" alt="Couple Photo 7">
+            </div>
+
+            <a class="prev" id="prevBtn">&#10094;</a>
+            <a class="next" id="nextBtn">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="gifts" class="donations">
+        <h2 class="section-title stylish-font">Registry & Gifts</h2>
+        <p>Your presence is the greatest gift of all. However, should you wish to honor us with a gift, a cash contribution towards our future together would be deeply appreciated.</p>
+        
+        <div class="bank-card">
+            <i class="fas fa-gift bank-icon"></i>
+            <h3>Israel & Rebecca</h3>
+            <div class="bank-details">
+                <p><strong>Bank:</strong> First Bank</p>
+                <p><strong>Account No:</strong> <span id="acct-num">3068980473</span></p>
+            </div>
+            <button class="copy-btn" onclick="copyAccount()">Copy Account Number</button>
+            <p id="copy-msg">Copied!</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2 class="stylish-font footer-logo">Infinite Romance '26</h2>
+        <p>&copy; 2026 Israel & Rebecca. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
