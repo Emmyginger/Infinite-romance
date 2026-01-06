@@ -470,9 +470,8 @@ footer p {
         align-items: flex-start;
         gap: 10px;
     }
-
     .slides img {
-        height: 450px;
+        height: 320px;
     }
     .bank-card{
         
