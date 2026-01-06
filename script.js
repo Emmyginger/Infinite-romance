@@ -75,3 +75,19 @@ function copyAccount() {
         console.error('Failed to copy: ', err);
     });
 }
+// copy wallet address
+function copyAddress() {
+    const walletadd = document.getElementById("wallet-add").innerText;
+    
+    navigator.clipboard.writeText(walletadd).then(() => {
+        const msg = document.getElementById("copy-msg2");
+        msg.style.opacity = "1";
+        
+        // Hide message after 2 seconds
+        setTimeout(() => {
+            msg.style.opacity = "0";
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
