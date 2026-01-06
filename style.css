@@ -352,6 +352,7 @@ section {
     transition: opacity 0.3s;
 }
 
+
 /* --- FOOTER --- */
 footer {
     background: var(--wine-dark);
@@ -411,6 +412,15 @@ footer p {
 
     .slides img {
         height: 450px;
+    }
+    .bank-card{
+        max-width: 250px;
+        overflow: hidden;
+    }
+    #wallet-add{
+        word-break: break-all;
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
 }
 
