@@ -174,7 +174,7 @@ section {
 /* --- ORDER OF RECEPTION (Single Box Style) --- */
 .reception-card {
     background: transparent;
-    backdrop-filter: blur(5px);
+    
     max-width: 600px;
     margin: 0 auto; /* Centers the box */
     padding: 3rem 2rem;
