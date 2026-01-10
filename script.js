@@ -22,7 +22,7 @@ showSlides(slideIndex);
 // Auto scroll every 5 seconds
 const autoScroll = setInterval(function() {
     plusSlides(1);
-}, 5000);
+}, 3000);
 
 // Next/Prev controls
 document.getElementById('prevBtn').addEventListener('click', () => plusSlides(-1));

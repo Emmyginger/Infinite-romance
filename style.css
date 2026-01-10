@@ -40,7 +40,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(250, 248, 240, 0.85); /* Matches --bg-cream with transparency */
+    background: rgba(250, 248, 240, 0.85); 
     z-index: -1;
 }
 /* --- TYPOGRAPHY --- */
@@ -56,7 +56,7 @@ h1, h2, h3 {
 /* --- NAVIGATION --- */
 nav {
     background: var(--white);
-    padding: 0.5rem 5%; /* Slight adjustment for image logo alignment */
+    padding: 0.5rem 5%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,7 +104,7 @@ nav {
 .hero {
     height: 100vh;
     /* Parallax effect background */
-    background: linear-gradient(rgba(114, 47, 55, 0.7), rgba(114, 47, 55, 0.4)), url('images/WhatsApp\ Image\ 2025-12-27\ at\ 12.50.48\ PM.jpeg');
+    background: linear-gradient(rgba(114, 47, 55, 0.7), rgba(114, 47, 55, 0.4)), url('images/_DSC0082.JPG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
