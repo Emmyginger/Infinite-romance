@@ -174,7 +174,6 @@ section {
 /* --- ORDER OF RECEPTION (Single Box Style) --- */
 .reception-card {
     background: transparent;
-    
     max-width: 600px;
     margin: 0 auto; /* Centers the box */
     padding: 3rem 2rem;
@@ -203,7 +202,7 @@ section {
 
 .reception-list li {
     padding: 12px 0;
-    border-bottom: 1px dashed rgba(212, 175, 55, 0.4); /* Subtle gold divider line */
+    border-bottom: 2px dashed rgba(212, 175, 55, 0.4); /* Subtle gold divider line */
     font-size: 1.1rem;
     color: var(--text-dark);
     font-weight: 400;
