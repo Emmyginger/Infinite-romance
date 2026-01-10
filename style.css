@@ -165,51 +165,62 @@ section {
     margin: 10px auto 0;
 }
 
-/* --- ORDER OF RECEPTION --- */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.timeline-item, .bank-card {
+ .bank-card {
     backdrop-filter: blur(5px); /* Blurs the logo slightly behind cards for focus */
     border: 1px solid var(--gold);
 }
 
-.timeline-item {
-    background: var(--white);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid var(--gold);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border-radius: 0 8px 8px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
+/* --- ORDER OF RECEPTION (Single Box Style) --- */
+.reception-card {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    max-width: 600px;
+    margin: 0 auto; /* Centers the box */
+    padding: 3rem 2rem;
+    border: 2px solid var(--gold);
+    border-radius: 15px;
+    /* Double border effect for elegance */
+    box-shadow: 
+        0 0 0 5px var(--white), 
+        0 0 0 7px var(--gold); 
     opacity: 0; /* For animation */
     transform: translateY(20px);
-    transition: all 0.6s ease;
+    transition: all 0.8s ease;
 }
 
-.timeline-item.show {
+.reception-card.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-.time {
-    background: var(--wine);
-    color: var(--white);
-    padding: 10px 15px;
-    border-radius: 50px;
-    font-weight: bold;
-    min-width: 100px;
+.reception-list {
+    list-style: none; /* Removes numbers/bullets */
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-.event-details h3 {
-    margin-bottom: 5px;
-    text-align: left;
+.reception-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.4); /* Subtle gold divider line */
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 400;
+}
+
+/* Remove border from the last item */
+.reception-list li:last-child {
+    border-bottom: none;
+   
+}
+
+/* Decorative flower inside the card */
+.card-flourish {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    opacity: 0.8;
 }
 
 /* --- IMAGE SLIDER --- */
